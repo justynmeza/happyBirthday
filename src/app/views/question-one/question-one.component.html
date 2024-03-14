@@ -1,0 +1,15 @@
+<app-pop-up-window [texto]="message" [iconCorrect]="icon" [colorDecoration]="colorDecoration" [nextWindow]="nextWindow"></app-pop-up-window>
+<div id="container_question">
+    <div id="container_info">
+        <h1 id="title">Primera pregunta</h1>
+        <p class="text">Solo una persona puede acceder a este contenido</p>
+        <p id="lbl_question" class="text">¿Cuál es su nombre?</p>
+        <form action="" id="form_question">
+            <input type="text" class="txt_fields" [(ngModel)]="inputName" name="name" placeholder="Nombre">
+            <input type="text" class="txt_fields" [(ngModel)]="inputSecondName" name="secondName" placeholder="Segundo nombre">
+            <input type="text" class="txt_fields" [(ngModel)]="inputLastname" name="lastname" placeholder="Apellido">
+            <input type="text" class="txt_fields" [(ngModel)]="inputSecondLastName" name="secondLastname" placeholder="Segundo apellido">
+        </form>
+        <button type="button" id="btn_next" (click)="openPopup()">CONTINUAR</button>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<app-pop-up-window [colorDecoration]="colorDecoration" [iconCorrect]="icon" [nextWindow]="nextWindow" [texto]="message"></app-pop-up-window>
+<div id="container_question">
+    <div id="container_info">
+        <h1 id="title">Cuarta pregunta</h1>
+        <p class="text">OK... ¡Parece que si eres tú! ¡Solo falta una cosa que lo puede confirmar y que solo ella sabe!</p>
+        <p id="lbl_question" class="text">¿Cuál es la clave de mi tarjeta?</p>
+        <form action="" id="form_question">
+            <input type="number" class="txt_fields" placeholder="Digita el número" (click)="tryPutPass()">
+        </form>
+        <button type="button" id="btn_next" (click)="ExecuteAction()">CONTINUAR</button>
+    </div>
+</div>

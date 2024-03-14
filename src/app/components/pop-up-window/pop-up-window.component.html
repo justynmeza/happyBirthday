@@ -1,0 +1,16 @@
+<div *ngIf="showPopup" class="popup-overlay">
+  <div class="popup-container">
+    <p id="icon_popup" style="{{iconCorrect ? 'color: greenyellow' : 'color: red'}}" class="container_icon">
+      <i class="bi {{iconCorrect ? 'bi-check-circle' : 'bi-x-circle'}}"></i>
+    </p>
+    <p class="text">{{texto}}</p>
+    <button id="btn_action" 
+    (click)="actionClick()"
+    class="btn_action"
+    [style.background-color]="bgColorBtn"
+    [style.color]="colorDecoration"
+    [style.border-color]="colorDecoration"
+    (mouseover)="changeBGColorBtnWithHover()"
+    (mouseout)="changeBGColorBtnWithOutHover()">{{iconCorrect ? 'Continuar' : 'Regresar'}}</button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<app-pop-up-window [colorDecoration]="colorDecoration" [iconCorrect]="icon" [nextWindow]="nextWindow" [texto]="message"></app-pop-up-window>
+<div id="container_question">
+    <div id="container_info">
+        <h1 id="title">Segunda pregunta</h1>
+        <p class="text">OK, sabes el nombre, pero...</p>
+        <p id="lbl_question" class="text">¿Como es su apodo?</p>
+        <form action="" id="form_question">
+            <input type="text" class="txt_fields" [(ngModel)]="inputNickName" name="nickname" placeholder="Escribir apodo aquí">
+        </form>
+        <button type="button" id="btn_next" (click)="ExecuteAction()">CONTINUAR</button>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+#container_question{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 211, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_info{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.192);
+    padding: 2rem;
+}
+
+#title{
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+.text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+#lbl_question{
+    font-weight: 550;
+}
+
+
+.txt_fields{
+    width: 17rem;
+    height: 2.5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 1rem;
+    outline: none;
+}
+
+.txt_fields:focus-within{
+    border-color: rgb(230, 133, 149);
+}
+
+#btn_next{
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: pink;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: pink;
+}
+
+#btn_next:hover{
+    background-color: pink;
+    color: white;
+}
+
+@media screen and (max-width: 780px) {
+    #title{
+        font-size: 2rem;
+    }
+    
+    .text{
+        font-size: 1rem;
+    }
+}

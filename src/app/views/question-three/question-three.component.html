@@ -1,0 +1,12 @@
+<app-pop-up-window [colorDecoration]="colorDecoration" [iconCorrect]="icon" [nextWindow]="nextWindow" [texto]="message"></app-pop-up-window>
+<div id="container_question">
+    <div id="container_info">
+        <h1 id="title">Tercera pregunta</h1>
+        <p class="text">Está bien... Te sabes el apodo. Ahora dime</p>
+        <p id="lbl_question" class="text">¿cuál es la persona que más amas en este mundo? </p>
+        <form action="" id="form_question">
+            <input type="text" class="txt_fields" [(ngModel)]="inputName" name="name" placeholder="Escribe el nombre de la persona">
+        </form>
+        <button type="button" id="btn_next" (click)="ExecuteAction()">CONTINUAR</button>
+    </div>
+</div>
