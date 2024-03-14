@@ -30,10 +30,10 @@ export class QuestionOneComponent {
     let isIcon:boolean = false;
 
     function asignMessage(){
-      if (name.toLowerCase() != 'andrea') return 'No creo que sepas de quien estoy hablando 🤔';
-      if (secondName.toLowerCase() != 'carolina') return 'jajaja me suena que te estas equivocando en algo';
-      if (lastname.toLowerCase() != 'hernandez') return 'Uy uy, me suena que no estas entendiendo 🤣';
-      if (secondLastname.toLowerCase() != 'ricaurte') return 'casi casi, pero aun asi te equivocas jeje';
+      if (name.toLowerCase().trim() != 'andrea') return 'No creo que sepas de quien estoy hablando 🤔';
+      if (secondName.toLowerCase().trim() != 'carolina') return 'jajaja me suena que te estas equivocando en algo';
+      if (lastname.toLowerCase().trim() != 'hernandez') return 'Uy uy, me suena que no estas entendiendo 🤣';
+      if (secondLastname.toLowerCase().trim() != 'ricaurte') return 'casi casi, pero aun asi te equivocas jeje';
       isIcon = true;
       return 'Correcto!! parece que si eres tu! 😁';
     }

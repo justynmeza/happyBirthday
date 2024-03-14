@@ -24,6 +24,8 @@ export class QuestionTwoComponent {
     let nickname:string = this.inputNickName;
     let isIcon:boolean = false;
 
+    nickname = nickname.trim();
+
     function asignMessage(){
       if (nickname.toLowerCase() != 'pewkenyeyu' && nickname.toLowerCase() != 'careverguita') return 'Si no sabes esto es porque no eres tu!! 😒';
       isIcon = true;

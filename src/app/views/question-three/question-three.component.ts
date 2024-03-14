@@ -24,6 +24,8 @@ export class QuestionThreeComponent {
     let name:string = this.inputName;
     let isIcon: boolean = false;
 
+    name = name.trim();
+
     function asignMessage(){
       if (name.toLowerCase() == 'andrea' || name.toLowerCase() == 'yo') return 'obvio tu no cuentas bobis... 😤';
       if (name.toLowerCase() == 'Lisbeth' || name.toLowerCase() == 'mama' || name.toLowerCase() == 'mi mama') return 'TU MAMA NO CUENTA! 😑';
